@@ -1,0 +1,8 @@
+/**
+ * babel configuration
+ */
+{
+    "presets": [
+        "es2015", "react"
+    ]
+}
