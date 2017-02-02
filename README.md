@@ -15,9 +15,12 @@ React modern seed using webpack 2 and yarn package manager
 - [Yarn Package Manager](https://yarnpkg.com/) (Created using 0.19.x version)
 
 ## Start dev server
-```npm run serve.dev ```
+```yarn run serve.dev ```
 
 ## Executing tests
-```npm test ``` to run all tests once
+```yarn run test ``` to run all tests once
 
-```npm run test.watch ``` to run tests on watch mode
+```yarn run test.watch ``` to run tests on watch mode
+
+## Build app to production
+```yarn run build ```
