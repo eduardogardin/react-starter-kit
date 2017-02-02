@@ -21,10 +21,13 @@ module.exports = {
         'react/lib/ReactContext': true,
     },
     module: {
-        loaders: [
-            { test: /\.js$/, loader: 'babel-loader', exclude: /(node_modules|bower_components)/ },
-            { test: /\.jsx?$/, loader: 'babel-loader', exclude: /(node_modules|bower_components)/ }
-        ]
+        rules: [
+            {
+                test: /(\.js$|\.jsx?$)/ ,
+                loader: "babel-loader",
+                exclude: /(node_modules|bower_components)/
+            }            
+        ]       
     },
     plugins: [HtmlWebpackPluginConfig]
 }

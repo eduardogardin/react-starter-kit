@@ -6,6 +6,7 @@
   "author": "Eduardo Gardin",
   "license": "MIT",
   "scripts": {
+    "clean": "rimraf dist",
     "serve.dev": "webpack-dev-server --hot",
     "test": "mocha ./test-setup.js ./src/**/*.spec.js",
     "test.watch": "mocha -w ./test-setup.js ./src/**/*.spec.js"
@@ -25,6 +26,7 @@
     "jsdom": "^9.9.1",
     "mocha": "^3.2.0",
     "react-addons-test-utils": "^15.4.2",
+    "rimraf": "^2.5.4",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^1.16.3"
   }
