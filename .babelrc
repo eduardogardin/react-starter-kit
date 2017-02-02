@@ -1,8 +1,13 @@
-/**
- * babel configuration
- */
-{
-    "presets": [
-        "es2015", "react"
-    ]
+{  
+  "presets": [
+    ["es2015", { "modules": false }],
+    "react"
+  ],
+  "env": {
+    "development": {
+      "presets": [
+        "react-hmre"
+      ]
+    }
+  }
 }
