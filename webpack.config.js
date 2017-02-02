@@ -15,10 +15,15 @@ module.exports = {
         path: './dist',
         filename: 'index_bundle.js'
     },
+    externals: {
+        'cheerio': 'window',
+        'react/lib/ExecutionEnvironment': true,
+        'react/lib/ReactContext': true,
+    },
     module: {
         loaders: [
-            { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-            { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ }
+            { test: /\.js$/, loader: 'babel-loader', exclude: /(node_modules|bower_components)/ },
+            { test: /\.jsx?$/, loader: 'babel-loader', exclude: /(node_modules|bower_components)/ }
         ]
     },
     plugins: [HtmlWebpackPluginConfig]
