@@ -11,8 +11,8 @@ React modern seed using webpack 2 and yarn package manager
 - [Enzyme](https://github.com/airbnb/enzyme)
 
 ## Prerequisites
-- [NodeJS: Created with 6.x version](https://nodejs.org/en/download/)
-- [Yarn Package Manager: Created with 0.19.x version](https://yarnpkg.com/)
+- [NodeJS](https://nodejs.org/en/download/)    (Created using 6.x version)
+- [Yarn Package Manager](https://yarnpkg.com/) (Created using 0.19.x version)
 
 ## Start dev server
 ```npm run serve.dev ```
